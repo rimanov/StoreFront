@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>About US</title>
+<style>
+body {
+  margin: 110;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.banner {
+			width: 100%;
+			height: 450px;
+			object-fit: cover;
+			overflow: hidden;
+		}
+
+a {
+	text-decoration: none;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 15px;
+  padding: 0 8px;
+}
+
+.about{
+	padding: 4px;
+	text-align: left;
+	color: black;
+	text-align: justify;
+	max-width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.about-section {
+  padding: 0px;
+	text-align: justify;
+  text-align-last: center;
+	max-width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+  background-color: white;
+  color: black;
+}
+.message{
+	padding: 15px;
+	text-align: center;
+	color: black;
+}
+
+.container {
+  padding: 0 10px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.tab {
+       display:inline-block;
+       margin-left: 280px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 gray;
+  margin: 5px;
+	height: 180px;
+}
+
+.title {
+  color: grey;
+}
+
+	*{
+		margin: 0;
+	    padding: 0;
+}
+</style>
+<nav class="navbar">
+  <div class="container">
+    <div class="logo_div">
+      <a href= "/html/index.html"><img src="logo.jpeg" alt="" class="logo"></a>
+    </div>
+
+  <div class="navbar_links">
+    <ul class="menu">
+    <li><a href="/html/index.html">Home</a></li>
+    <li><a href="/html/allProductsPage.php">Products</a></li>
+    <li><a href="/html/infoPages/aboutPage.html">About</a></li>
+    <li><a href="/html/loginPages/loginPage.html">Login</a></li>
+    <li class="cart-icon">
+          <a href="/html/cartPage.php">
+          <i class="fa fa-shopping-cart" style="font-size:20px;color:white"></i><span></span>
+          </a>
+          </li>
+      </ul>
+  </div>
+</div>
+  </nav>
+</head>
+
+<body>
+<img class="banner" src= "../products/productPictures/bannerphoto.jpeg">
+
+<div class="about">
+	<h1> About Us </h1>
+</div>
+
+<div class="about-section">
+  <p>Here at ElectronicsForCheap.com, when we are faced with an opportunity to offer up great products for a fraction of their cost to millions of customers while at the same time making profit, we take that opportunity and turn it into reality.
+		We are a knock-off startup company based in San Francisco Bay Area. We had the genius idea of starting this online business with the inspiration we got from our professor for CIS 317 Section 03 class, Professor Bierman. We first started off by contacting shady suppliers from Guangdou who promised to make quality parts for our company for the cheapest price. But we were wrong. Instead we got ripped off and learned our first lesson. Never do business with an unreputable seller. After getting scammed 5 more times, we finally landed on a solid supplier who would be supplying the very products you see listed on our page today for the right cost.
+	We are delighted that you are on this journey with us. Thank you for your generous contributions.</p>
+</div>
+
+
+
+<h2 style="text-align:center">Our Team</h2>
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Rasul Imanov</h2>
+        <p class="title">CEO & Co-Founder</p>
+        <p>CEO and Co-Founder @ ElectronicsForCheap.com</p>
+        <p>rasul@efc.com</p>
+      </div>
+    </div>
+  </div>
+
+	<div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Manuel Hernandez</h2>
+        <p class="title">Co-Founder</p>
+        <p>Co-Founder @ ElectronicsForCheap.com</p>
+        <p>manny@efc.com</p>
+      </div>
+    </div>
+  </div>
+
+	<div class="column">
+		<div class="card">
+			<div class="container">
+				<h2>Vi Dao</h2>
+				<p class="title">Product Managment</p>
+				<p>Product Manager @ ElectronicsForCheap.com</p>
+				<p>vi@efc.com</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="column">
+		<div class="card">
+			<div class="container">
+				<h2>Emin Musayev</h2>
+				<p class="title">Quality Assurance</p>
+				<p>Quality Assurance @ ElectronicsForCheap.com</p>
+				<p>emin@efc.com</p>
+			</div>
+		</div>
+	</div>
+
+</body>
+<footer style='text-align: center;'>
+	<p><a href= "faq.html">FAQ</a><span class="tab"><a href= "contact.html">Contact Us</a><span class="tab"><a href= "return.html">Return Policy</a></p></div>
+</footer>
+<span class="message">
+	<p>ElectronicsForCheap Ltd.</p>
+</span>
+</html>

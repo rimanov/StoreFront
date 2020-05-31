@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Create Account</title>
+    <script defer src="ValidateInput.js"></script>
+  <style>
+    .create-account-box {
+      width: 625px;
+      text-align: center;
+      border: 1px solid black;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 7px;
+      padding-bottom: 15px;
+      background-color:whitesmoke;
+    }
+
+    .create-account-box h2 {
+      font-style:italic;
+      font-family:cursive;
+    }
+
+    .create-account-box button {
+			background-color: black;
+		  color: white;
+		  padding: 10px 40px;
+		  border: none;
+		  cursor: pointer;
+    }
+		.create-account-box button:hover {
+			background-color: purple;
+
+		}
+		body, html {
+		  height: 100%;
+		  margin: 0;
+		}
+
+	* {
+		  box-sizing: border-box;
+		}
+    .textbox {
+      padding-bottom: 10px;
+    }
+
+    .textbox input {
+      width: 275px;
+    }
+		.tab {
+			   display:inline-block;
+			   margin-left: 280px;
+		}
+		a {
+				text-decoration: none;
+		}
+
+</style>
+<nav class="navbar">
+  <div class="container">
+    <div class="logo_div">
+      <a href= "/html/index.html"><img src="logo.jpeg" alt="" class="logo"></a>
+    </div>
+
+  <div class="navbar_links">
+    <ul class="menu">
+    <li><a href="/html/index.html">Home</a></li>
+    <li><a href="/html/allProductsPage.php">Products</a></li>
+    <li><a href="/html/infoPages/aboutPage.html">About</a></li>
+    <li><a href="/html/loginPages/loginPage.html">Login</a></li>
+    <li class="cart-icon">
+          <a href="/html/cartPage.php">
+          <i class="fa fa-shopping-cart" style="font-size:20px;color:white"></i><span></span>
+          </a>
+          </li>
+      </ul>
+  </div>
+</div>
+	</nav>
+	<br>
+</head>
+
+<body>
+
+<div class=create-account-box>
+  <form id="form" action="signup.php" method="post"">
+  <h2>Create Account</h2>
+  <p align="center">Fill out the following requirements. Then we'll send you a confirmation email!</p>
+  <div class="textbox">
+    <i class="fas fa-user"></i>
+    <input id="first_name" type="text" name="userFname" placeholder="First Name">
+  </div>
+  <div class="textbox">
+    <i class="fas fa-user"></i>
+    <input id="last_name" type="text" name="userLname" placeholder="Last Name">
+  </div>
+  <div class="textbox">
+    <i class="fas fa-user"></i>
+    <input id="email" type="text" name="userEmail" placeholder="Email">
+  </div>
+  <div class="textbox">
+    <i class="fas fa-user"></i>
+    <input id="confirm_email" type="text" name="userEmailconfirm" placeholder="Confirm Email">
+  </div>
+  <div class="textbox">
+    <i class="fas fa-user"></i>
+    <input id="password" type="password" name="userPass" placeholder="Password(Minimum 8 characters required)">
+  </div>
+  <div class="textbox">
+    <i class="fas fa-user"></i>
+    <input id="confirm_password" type="password" name="userPassconfirm" placeholder="Confirm Password">
+  </div>
+  <label>You agree to our <a href="../infoPages/termsOfService.html">terms of service</label></a><br>
+  <br>
+  <button type="submit">Create Account</button>
+  <br>
+  <div id="error"></div>
+  </form>
+  <!--<button type="button" onclick="alert('Thank you for creating an account.We will send a verification link on your provided email address. So please confirmm your email address and we will send you a discount code.')">Create Account</button>-->
+</div>
+
+
+<br><br><br><br>
+</body>
+<!-- ***************** Footer of the page *************** -->
+
+<footer style='text-align: center;'>
+<p><a href= "../infoPages/faq.html">FAQ</a><span class="tab"><a href= "../infoPages/contact.html">Contact Us</a><span class="tab"><a href= "../infoPages/return.html">Return Policy</a></p></div>
+</footer>
+<span class="message">
+<p style="text-align: center;">ElectronicsForCheap LTD.</p>
+</span>
+</html>

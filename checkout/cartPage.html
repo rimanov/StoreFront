@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="../navbar.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Your Cart</title>
+
+<style>
+html, body, {
+		width:100%;
+	 	height:100%;
+}
+.products-container{
+  max-width:650px;
+  justify-content:space-between;
+  margin: 0 auto;
+  margin-top: 100px;
+  display:flex;
+  flex-wrap:wrap;
+  padding-bottom: 50px;
+}
+
+.products-header{
+  width:100%;
+  max-width: 750px;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 auto;
+  border-bottom: 4px solid purple;
+  font-size: 25px;
+  border-radius: 5px;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+.product-title{
+  width: 45%;
+}
+.products img{
+  width:25%;
+}
+.products{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.product{
+  width: 45%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+}
+.price{
+  display: flex;
+  width: 15%;
+  align-items: center;
+}
+.quantity{
+  display: flex;
+  width: 10%;
+  align-items: center;
+}
+.basketTotalContainer{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 10px 0;
+  border-top: 4px solid purple;
+  border-radius: 5px;
+}
+.Title{
+  width:30%;
+}
+.cartTotal{
+  width:10%;
+}
+.shipping{
+  display: flex;
+  justify-content:flex-end;
+  width: 100%;
+  padding: 10px 0;
+}
+.remove{
+  width:10%;
+}
+#thistext{
+  text-align:right;
+  font-size:80%;
+  font:small-caption;
+}
+#thisbutton{
+  background-color: black;
+  color: white;
+  padding: 18px 30px;
+  border: none;
+  cursor: pointer;
+}
+#thisbutton:hover{
+  background-color: purple;
+}
+  a {
+    text-decoration: none;
+  }
+  .tab {
+    display: inline-block;
+    margin-left: 280px;
+  }
+
+</style>
+<nav class="navbar">
+  <div class="container">
+    <div class="logo_div">
+      <a href="../index.html"><img src="logo.jpeg" alt="" class="logo"></a>
+    </div>
+
+    <div class="navbar_links">
+      <ul class="menu">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../products/allProductsPage.html">Products</a></li>
+        <li><a href="../infoPages/aboutPage.html">About</a></li>
+        <li><a href="../loginPages/loginPage.html">Login</a></li>
+        <li class="cart-icon">
+          <a href="../checkout/cartPage.html">
+            <i class="fa fa-shopping-cart" style="font-size:20px;color:white"></i><span> 0</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</head>
+<body>
+
+<div class="products-container">
+  <div class="products-header">
+    <h5 class="product-title">PRODUCT(S)</h5>
+    <h5 class="price">Price</h5>
+    <h5 class="quantity">Quantity</h5>
+  </div>
+  <div class="products">
+
+  </div>
+</div>
+<div class="shipping" align="right">
+<p id="thistext">Shipping, taxes, and discounts codes calculated at checkout.</p>
+</div>
+<p align="right">
+<button onclick="window.location.href='../checkout/paymentPage.html';" id="thisbutton" >Continue to payment</button>
+</p>
+
+<br><br>
+<script src="../addtoCart.js"></script>
+
+</body>
+<footer style='text-align: center;'>
+  <p><a href="../infoPages/faq.html">FAQ</a><span class="tab"><a href="../infoPages/contact.html">Contact Us</a><span class="tab"><a href="../infoPages/return.html">Return Policy</a></p>
+  </div>
+</footer>
+<span class="message">
+  <p style="text-align: center;">ElectronicsForCheap Ltd.</p>
+</span>
+
+</html>
