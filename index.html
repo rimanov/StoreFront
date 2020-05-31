@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Home</title>
+<style>
+
+
+
+	*{
+		margin: 0;
+	  padding: 0;
+	}
+	.navbar{
+		width: 100%
+	    overflow: hidden;
+	    height: 70px;
+	    line-height: 70px;
+	    background: black;
+	    border-bottom: 5px solid purple;
+	}
+	.logo{
+		width: 190px;
+	    float: left;
+	}
+	.container{
+		width: 90%;
+	  margin: 0 auto;
+	}
+  a {
+  	text-decoration: none;
+  }
+  .tab {
+         display:inline-block;
+         margin-left: 280px;
+  }
+	.menu{
+		float: right;
+	}
+	.menu li{
+		float: left;
+	    width: 120px;
+	    height: 70px;
+	    line-height: 70px;
+	    text-align: center;
+	    list-style: none;
+	}
+	.menu li a{
+		color: white;
+	    text-decoration: none;
+	    font-family: calibri;
+	    text-transform: uppercase;
+	    display: block;
+	}
+	.menu li:hover{
+		background: purple;
+	}
+
+
+			* {
+			  box-sizing: border-box;
+			}
+
+			/* Float four columns side by side */
+			.column {
+			  float: left;
+			  width: 25%;
+			  padding: 0 10px;
+			}
+
+			/* Remove extra left and right margins, due to padding */
+			.row {margin: 0 -5px;}
+
+			/* Clear floats after the columns */
+			.row:after {
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			/* Responsive columns */
+			@media screen and (max-width: 600px) {
+			  .column {
+			    width: 100%;
+			    display: block;
+			    margin-bottom: 20px;
+			  }
+			}
+
+			/* Style the counter cards */
+			.card {
+			  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+			  padding: 16px;
+			  text-align: center;
+			  background-color: white;
+			}
+
+      a {
+        text-decoration: none;
+      }
+      .tab {
+        display: inline-block;
+        margin-left: 280px;
+      }
+
+
+
+    /************* start of slideshow css ***************/
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 800px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: black;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: black;
+      font-size: 20px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 35px;
+      width: 100%;
+      text-align: center;
+    }
+
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+
+    @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .prev, .next,.text {font-size: 11px}
+    }
+
+    /************* end of slideshow css ****************/
+
+    /*********** start of navagation bar **************/
+
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .navbar{
+        width: 100%
+        overflow: hidden;
+        height: 70px;
+        line-height: 70px;
+        background: black;
+        border-bottom: 5px solid purple;
+    }
+    .logo{
+        width: 190px;
+        float: left;
+    }
+    .container{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .menu{
+        float: right;
+    }
+    .menu li{
+        float: left;
+        width: 120px;
+        height: 70px;
+        line-height: 70px;
+        text-align: center;
+        list-style: none;
+    }
+    .menu li a{
+        color: white;
+        text-decoration: none;
+        font-family: calibri;
+        text-transform: uppercase;
+        display: block;
+    }
+    .menu li:hover{
+        background: purple;
+    }
+
+
+
+	/***************Start of product card displays **************/
+
+	.card {
+		display:inline-block;
+	  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	  max-width: 350px;
+	  margin: 15px;
+	  text-align: center;
+	  font-family: arial;
+
+	}
+
+	.price {
+	  color: grey;
+	  font-size: 22px;
+	}
+
+	.card button {
+	  border: none;
+	  outline: 0;
+	  padding: 12px;
+	  color: white;
+	  background-color: #000;
+	  text-align: center;
+	  cursor: pointer;
+	  width: 100%;
+	  font-size: 18px;
+	}
+
+	.card button:hover {
+	  opacity: 0.7;
+	}
+
+
+
+</style>
+
+
+
+</head>
+
+
+
+<body>
+
+
+
+	<div class="navbar">
+    	<div class="container">
+        <div class="logo_div">
+					<a href= "/html/index.html"><img src="logo.jpeg" alt="" class="logo"></a>
+        </div>
+
+    	<div class="navbar_links">
+    		<ul class="menu">
+        <li><a href="/html/index.html">Home</a></li>
+				<li><a href="/html/allProductsPage.php">Products</a></li>
+				<li><a href="/html/infoPages/aboutPage.html">About</a></li>
+        <li><a href="/html/loginPages/loginPage.html">Login</a></li>
+				<li class="cart-icon">
+							<a href="/html/cartPage.php">
+							<i class="fa fa-shopping-cart" style="font-size:20px;color:white"></i><span></span>
+					    </a>
+							</li>
+        	</ul>
+    	</div>
+    </div>
+  </div>
+
+
+<br><br><br><br>
+
+
+<!-- ************* Top Sellers Section ******************-->
+
+<h1 align="center"><u>Top Sellers</u></h1>
+<br>
+
+<div id="slideshow1" class="slideshow-container">
+
+<div class="mySlides fade">
+  <a href="products/macbookAir13InchPage.html"><img src="products/productPictures/Main_macbookair.jpg" style="width:100%"></a>
+  <div class="text"><p style="color:white;">Macbook Air</p></div>
+</div>
+
+<div class="mySlides fade">
+  <a href="products/airpodsProPage.html"><img src="products/productPictures/Main_airpodsPro.jpg" style="width:100%"></a>
+  <div class="text"><p style="color:black;">Airpods Pro</p></div>
+</div>
+
+<div class="mySlides fade">
+  <a href="products/galaxyS20Page.html"><img src="products/productPictures/Main_galaxys20.jpg" style="width:100%"></a>
+  <div class="text"><p style="color:red;">Galaxy S20</p></div>
+</div>
+
+<div class="mySlides fade">
+  <a href="products/appleWatchPage.html"><img src="products/productPictures/Main_applewatch.jpg" style="width:100%"></a>
+  <div class="text"><p style="color:white;">Apple Watch</p></div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1, slideshow1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1, slideshow1)">&#10095;</a>
+
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1, slideshow1)"></span>
+  <span class="dot" onclick="currentSlide(2, slideshow1)"></span>
+  <span class="dot" onclick="currentSlide(3, slideshow1)"></span>
+  <span class="dot" onclick="currentSlide(4, slideshow1)"></span>
+</div>
+</div>
+<br><br><br><br><br><br>
+
+
+
+<!-- ************ on sale section **********************-->
+<h1 align="center"><u>ON SALE</u><br><p style="color:red;">30% or MORE!</p></h1>
+<br>
+
+<div id="slideshow2" class="slideshow-container">
+
+<div class="mySlides fade">
+  <a href="products/samsung_curved55InchPage.html"><img src="products/productPictures/Main_samsung_curved55inch.jpg" style="width:100%"></a>
+  <div class="text">Samsung Curved 55 Inch</div>
+</div>
+
+<div class="mySlides fade">
+  <a href="products/samsung_Q70_65InchPage.html"><img src="products/productPictures/Main_samsung_q70_65inch.jpg" style="width:100%"></a>
+  <div class="text"><p style="color:black;">Samsung Q70 65 Inch</p></div>
+</div>
+
+<div class="mySlides fade">
+  <a href="products/iphoneXRPage.html"><img src="products/productPictures/Main_iphonexr.jpg" style="width:100%"></a>
+  <div class="text"><p style="color:white;">iPhone XR</p></div>
+</div>
+
+<div class="mySlides fade">
+  <a href="products/chromebookPage.html"><img src="products/productPictures/Main_chromebook.jpg" style="width:100%"></a>
+  <div class="text"><p style="color:white;">Chromebook</p></div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1, slideshow2)">&#10094;</a>
+<a class="next" onclick="plusSlides(1, slideshow2)">&#10095;</a>
+
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1, slideshow2)"></span>
+  <span class="dot" onclick="currentSlide(2, slideshow2)"></span>
+  <span class="dot" onclick="currentSlide(3, slideshow2)"></span>
+  <span class="dot" onclick="currentSlide(4, slideshow2)"></span>
+</div>
+</div>
+<br><br><br><br><br><br>
+
+
+
+<script>
+
+    var slideshow1 = document.getElementById("slideshow1");
+    slideshow1.currentSlideIndex = 1;
+    showSlides(slideshow1.currentSlideIndex, slideshow1);
+
+    var slideshow2 = document.getElementById("slideshow2");
+    slideshow2.currentSlideIndex = 1;
+    showSlides(slideshow2.currentSlideIndex, slideshow2);
+
+
+    function plusSlides(n, slideshow) {
+      showSlides(slideshow.currentSlideIndex += n, slideshow);
+    }
+
+    function currentSlide(n, slideshow) {
+      showSlides(slideshow.currentSlideIndex = n, slideshow);
+    }
+
+    function showSlides(n, slideshow) {
+      var i;
+      var slides = slideshow.getElementsByClassName("mySlides");
+      var dots = slideshow.getElementsByClassName("dot");
+      if (n > slides.length) {slideshow.currentSlideIndex = 1}
+      if (n < 1) {slideshow.currentSlideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideshow.currentSlideIndex-1].style.display = "block";
+      dots[slideshow.currentSlideIndex-1].className += " active";
+    }
+
+</script>
+
+
+<!------***********-Comparison section --****************------>
+
+<h1 style="text-align:center"><u>Compare Available Products</u></h1>
+
+<div align="center">
+
+<div class="card">
+
+	<div>
+		<select onchange="displayProduct_p1(this);">
+			<option disabled>----Laptops----</option>
+	    	<option value="Acer" selected>Acer Spin</option>
+			<option value="Chromebook">Chromebook</option>
+			<option value="Dell_Insperion">Dell Insperion</option>
+			<option value="Macbook_Air">Macbook Air</option>
+
+			<option disabled>----Phones----</option>
+			<option value="Galaxy_Note10">Galaxy Note 10</option>
+			<option value="Galaxy_S20">Galaxy S20</option>
+			<option value="iPhoneX">iPhone X</option>
+			<option value="iPhoneXR">iPhone XR</option>
+
+			<option disabled>----Televisions----</option>
+			<option value="Samsung_Q70">Samsung Q70</option>
+			<option value="Samsung_curved">Samsung Curved</option>
+
+			<option disabled>----Earphone(s)----</option>
+	        <option value="Airpods">Airpods</option>
+
+			<option disabled>----Watche(s)----</option>
+			<option value="Apple_Watch">Apple Watch</option>
+	    </select>
+	</div>
+
+
+  <img src="indexPictures/acerspin.jpg" id="p1_Pic" width="280" height="280">
+  <h1 id="p1_Title">Acer Spin</h1>
+  <p id="p1_price" class="price">$69.99</p><br>
+  <p id="p1d1" align="center">Processor: 6th Gen Intel i5-6200U </p><br>
+  <p id="p1d2" align="center">Operating System: Windows 10 </p><br>
+  <p id="p1d3" align="center">Storage: 256GB SSD</p><br>
+  <p><button>Add to Cart</button></p>
+</div>
+
+<div class="card">
+
+	<div>
+		<select onchange="displayProduct_p2(this);">
+			<option disabled>----Laptops----</option>
+	    	<option value="Acer">Acer Spin</option>
+			<option value="Chromebook" selected>Chromebook</option>
+			<option value="Dell_Insperion">Dell Insperion</option>
+			<option value="Macbook_Air">Macbook Air</option>
+
+			<option disabled>----Phones----</option>
+			<option value="Galaxy_Note10">Galaxy Note 10</option>
+			<option value="Galaxy_S20">Galaxy S20</option>
+			<option value="iPhoneX">iPhone X</option>
+			<option value="iPhoneXR">iPhone XR</option>
+
+			<option disabled>----Televisions----</option>
+			<option value="Samsung_Q70">Samsung Q70</option>
+			<option value="Samsung_curved">Samsung Curved</option>
+
+			<option disabled>----Earphone(s)----</option>
+	        <option value="Airpods">Airpods</option>
+
+			<option disabled>----Watche(s)----</option>
+			<option value="Apple_Watch">Apple Watch</option>
+	    </select>
+	</div>
+
+  <img src="indexPictures/chromebook.jpg" id="p2_Pic" width="280" height="280">
+  <h1 id="p2_Title">Chromebook</h1>
+  <p id="p2_price" class="price">$49.98</p><br>
+  <p id="p2d1" align="center">Processor: Intel Celeron</p><br>
+  <p id="p2d2" align="center">Operating System: Chrome OS</p><br>
+  <p id="p2d3" align="center">Storage: 16GB eMMC</p><br>
+  <p><button>Add to Cart</button></p>
+</div>
+
+</div>
+
+
+<script>
+function displayProduct_p1(t){
+	if(t.value == "Acer"){
+		document.getElementById("p1_Pic").src = "indexPictures/acerspin.jpg";
+    	document.getElementById("p1_Title").innerHTML = "Acer Spin";
+		document.getElementById("p1_price").innerHTML = "$49.98";
+		document.getElementById("p1d1").innerHTML = "Processor: 6th Gen Intel i5-6200U";
+		document.getElementById("p1d2").innerHTML = "Operating System: Windows 10";
+		document.getElementById("p1d3").innerHTML = "Storage: 256GB SSD";
+    }
+	else if(t.value == "Chromebook"){
+		document.getElementById("p1_Pic").src = "indexPictures/chromebook.jpg";
+		document.getElementById("p1_Title").innerHTML = "Chromebook";
+		document.getElementById("p1_price").innerHTML = "$69.99";
+		document.getElementById("p1d1").innerHTML = "Processor: Intel Celeron";
+		document.getElementById("p1d2").innerHTML = "Operating System: Chrome OS";
+		document.getElementById("p1d3").innerHTML = "Storage: 16GB eMMC";
+	}
+	else if(t.value == "Dell_Insperion"){
+		document.getElementById("p1_Pic").src = "indexPictures/dell_insperion.jpg";
+		document.getElementById("p1_Title").innerHTML = "Dell Insperion";
+		document.getElementById("p1_price").innerHTML = "$119.99";
+		document.getElementById("p1d1").innerHTML = "Processor: Intel Core i5";
+		document.getElementById("p1d2").innerHTML = "Operating System: Windows 8 Home";
+		document.getElementById("p1d3").innerHTML = "Storage: 1TB SATA HD";
+
+	}
+	else if(t.value == "Macbook_Air"){
+		document.getElementById("p1_Pic").src = "indexPictures/macbookair13inch.jpg";
+		document.getElementById("p1_Title").innerHTML = "Macbook Air 13 Inch";
+		document.getElementById("p1_price").innerHTML = "$549.99";
+		document.getElementById("p1d1").innerHTML = "Processor: 1.6Ghz Intel Core i5";
+		document.getElementById("p1d2").innerHTML = "Operating System: Mac OS Catalina";
+		document.getElementById("p1d3").innerHTML = "Storage: 128GB";
+
+	}
+	else if(t.value == "Galaxy_Note10"){
+		document.getElementById("p1_Pic").src = "indexPictures/galaxynote10.jpg";
+		document.getElementById("p1_Title").innerHTML = "Galaxy Note 10";
+		document.getElementById("p1_price").innerHTML = "$439.99";
+		document.getElementById("p1d1").innerHTML = "Processor: Snapdragon 855";
+		document.getElementById("p1d2").innerHTML = "Operating System: Android 9.0";
+		document.getElementById("p1d3").innerHTML = "Storage: 256GB";
+
+	}
+	else if(t.value == "Galaxy_S20"){
+		document.getElementById("p1_Pic").src = "indexPictures/galaxys20.jpg";
+		document.getElementById("p1_Title").innerHTML = "Galaxy S20";
+		document.getElementById("p1_price").innerHTML = "$519.99";
+		document.getElementById("p1d1").innerHTML = "Processor: 64-bit Octa-Core";
+		document.getElementById("p1d2").innerHTML = "Operating System: Android 10.9";
+		document.getElementById("p1d3").innerHTML = "Storage: 128GB";
+
+	}
+	else if(t.value == "iPhoneX"){
+		document.getElementById("p1_Pic").src = "indexPictures/iphonex.jpg";
+		document.getElementById("p1_Title").innerHTML = "iPhone X";
+		document.getElementById("p1_price").innerHTML = "$329.99";
+		document.getElementById("p1d1").innerHTML = "Processor: A11 Bionic";
+		document.getElementById("p1d2").innerHTML = "Operating System: IOS 13.3.3";
+		document.getElementById("p1d3").innerHTML = "Storage: 64GB";
+
+	}
+	else if(t.value == "iPhoneXR"){
+		document.getElementById("p1_Pic").src = "indexPictures/iphonexr.jpg";
+		document.getElementById("p1_Title").innerHTML = "iPhone XR";
+		document.getElementById("p1_price").innerHTML = "$229.99";
+		document.getElementById("p1d1").innerHTML = "Processor: A12 Bionic";
+		document.getElementById("p1d2").innerHTML = "Operating System: IOS 13.3.3";
+		document.getElementById("p1d3").innerHTML = "Storage: 64/128/256 GB";
+
+	}
+	else if(t.value == "Samsung_Q70"){
+		document.getElementById("p1_Pic").src = "indexPictures/q70_65Inch.jpg";
+		document.getElementById("p1_Title").innerHTML = "Samsung Q70 65 Inch";
+		document.getElementById("p1_price").innerHTML = "$699.95";
+		document.getElementById("p1d1").innerHTML = "Processor: Quantum Processor 4K";
+		document.getElementById("p1d2").innerHTML = "Size: 65.5 Inches";
+		document.getElementById("p1d3").innerHTML = "Resolution: 2160(4K)";
+
+	}
+	else if(t.value == "Samsung_curved"){
+		document.getElementById("p1_Pic").src = "indexPictures/curved55inch.jpg";
+		document.getElementById("p1_Title").innerHTML = "Samsung Curved 55 Inch";
+		document.getElementById("p1_price").innerHTML = "$339.59";
+		document.getElementById("p1d1").innerHTML = "Display: LED";
+		document.getElementById("p1d2").innerHTML = "Series: 7 Series 4K Curved";
+		document.getElementById("p1d3").innerHTML = "Resolution : 2160(4K)";
+
+	}
+    else if(t.value == "Airpods"){
+		document.getElementById("p1_Pic").src = "indexPictures/airpodspro.jpg";
+		document.getElementById("p1_Title").innerHTML = "Airpods Pro";
+		document.getElementById("p1_price").innerHTML = "$89.99";
+		document.getElementById("p1d1").innerHTML = "Chipset: H1 Ionic";
+		document.getElementById("p1d2").innerHTML = "-Active Noise Cancellation";
+		document.getElementById("p1d3").innerHTML = "-Up to 5 hour battery life";
+
+    }
+	else if(t.value == "Apple_Watch"){
+		document.getElementById("p1_Pic").src = "indexPictures/applewatch.jpg";
+		document.getElementById("p1_Title").innerHTML = "Apple Watch";
+		document.getElementById("p1_price").innerHTML = "$125.49";
+		document.getElementById("p1d1").innerHTML = "Processor: Apple S1P";
+		document.getElementById("p1d2").innerHTML = "Operating System: Watch OS 2.0";
+		document.getElementById("p1d3").innerHTML = "Storage: 4GB";
+
+	}
+}
+
+
+function displayProduct_p2(t){
+	if(t.value == "Acer"){
+		document.getElementById("p2_Pic").src = "indexPictures/acerspin.jpg";
+    	document.getElementById("p2_Title").innerHTML = "Acer Spin";
+		document.getElementById("p2_price").innerHTML = "$49.98";
+		document.getElementById("p2d1").innerHTML = "Processor: 6th Gen Intel i5-6200U";
+		document.getElementById("p2d2").innerHTML = "Operating System: Windows 10";
+		document.getElementById("p2d3").innerHTML = "Storage: 256GB SSD";
+    }
+	else if(t.value == "Chromebook"){
+		document.getElementById("p2_Pic").src = "indexPictures/chromebook.jpg";
+		document.getElementById("p2_Title").innerHTML = "Chromebook";
+		document.getElementById("p2_price").innerHTML = "$69.99";
+		document.getElementById("p2d1").innerHTML = "Processor: Intel Celeron";
+		document.getElementById("p2d2").innerHTML = "Operating System: Chrome OS";
+		document.getElementById("p2d3").innerHTML = "Storage: 16GB eMMC";
+	}
+	else if(t.value == "Dell_Insperion"){
+		document.getElementById("p2_Pic").src = "indexPictures/dell_insperion.jpg";
+		document.getElementById("p2_Title").innerHTML = "Dell Insperion";
+		document.getElementById("p2_price").innerHTML = "$119.99";
+		document.getElementById("p2d1").innerHTML = "Processor: Intel Core i5";
+		document.getElementById("p2d2").innerHTML = "Operating System: Windows 8 Home";
+		document.getElementById("p2d3").innerHTML = "Storage: 1TB SATA HD";
+
+	}
+	else if(t.value == "Macbook_Air"){
+		document.getElementById("p2_Pic").src = "indexPictures/macbookair13inch.jpg";
+		document.getElementById("p2_Title").innerHTML = "Macbook Air 13 Inch";
+		document.getElementById("p2_price").innerHTML = "$549.99";
+		document.getElementById("p2d1").innerHTML = "Processor: 1.6Ghz Intel Core i5";
+		document.getElementById("p2d2").innerHTML = "Operating System: Mac OS Catalina";
+		document.getElementById("p2d3").innerHTML = "Storage: 128GB";
+
+	}
+	else if(t.value == "Galaxy_Note10"){
+		document.getElementById("p2_Pic").src = "indexPictures/galaxynote10.jpg";
+		document.getElementById("p2_Title").innerHTML = "Galaxy Note 10";
+		document.getElementById("p2_price").innerHTML = "$439.99";
+		document.getElementById("p2d1").innerHTML = "Processor: Snapdragon 855";
+		document.getElementById("p2d2").innerHTML = "Operating System: Android 9.0";
+		document.getElementById("p2d3").innerHTML = "Storage: 256GB";
+
+	}
+	else if(t.value == "Galaxy_S20"){
+		document.getElementById("p2_Pic").src = "indexPictures/galaxys20.jpg";
+		document.getElementById("p2_Title").innerHTML = "Galaxy S20";
+		document.getElementById("p2_price").innerHTML = "$519.99";
+		document.getElementById("p2d1").innerHTML = "Processor: 64-bit Octa-Core";
+		document.getElementById("p2d2").innerHTML = "Operating System: Android 10.9";
+		document.getElementById("p2d3").innerHTML = "Storage: 128GB";
+
+	}
+	else if(t.value == "iPhoneX"){
+		document.getElementById("p2_Pic").src = "indexPictures/iphonex.jpg";
+		document.getElementById("p2_Title").innerHTML = "iPhone X";
+		document.getElementById("p2_price").innerHTML = "$329.99";
+		document.getElementById("p2d1").innerHTML = "Processor: A11 Bionic";
+		document.getElementById("p2d2").innerHTML = "Operating System: IOS 13.3.3";
+		document.getElementById("p2d3").innerHTML = "Storage: 64GB";
+
+	}
+	else if(t.value == "iPhoneXR"){
+		document.getElementById("p2_Pic").src = "indexPictures/iphonexr.jpg";
+		document.getElementById("p2_Title").innerHTML = "iPhone XR";
+		document.getElementById("p2_price").innerHTML = "$229.99";
+		document.getElementById("p2d1").innerHTML = "Processor: A12 Bionic";
+		document.getElementById("p2d2").innerHTML = "Operating System: IOS 13.3.3";
+		document.getElementById("p2d3").innerHTML = "Storage: 64/128/256 GB";
+
+	}
+	else if(t.value == "Samsung_Q70"){
+		document.getElementById("p2_Pic").src = "indexPictures/q70_65Inch.jpg";
+		document.getElementById("p2_Title").innerHTML = "Samsung Q70 65 Inch";
+		document.getElementById("p2_price").innerHTML = "$699.95";
+		document.getElementById("p2d1").innerHTML = "Processor: Quantum Processor 4K";
+		document.getElementById("p2d2").innerHTML = "Size: 65.5 Inches";
+		document.getElementById("p2d3").innerHTML = "Resolution: 2160(4K)";
+
+	}
+	else if(t.value == "Samsung_curved"){
+		document.getElementById("p2_Pic").src = "indexPictures/curved55inch.jpg";
+		document.getElementById("p2_Title").innerHTML = "Samsung Curved 55 Inch";
+		document.getElementById("p2_price").innerHTML = "$339.59";
+		document.getElementById("p2d1").innerHTML = "Display: LED";
+		document.getElementById("p2d2").innerHTML = "Series: 7 Series 4K Curved";
+		document.getElementById("p2d3").innerHTML = "Resolution : 2160(4K)";
+
+	}
+    else if(t.value == "Airpods"){
+		document.getElementById("p2_Pic").src = "indexPictures/airpodspro.jpg";
+		document.getElementById("p2_Title").innerHTML = "Airpods Pro";
+		document.getElementById("p2_price").innerHTML = "$89.99";
+		document.getElementById("p2d1").innerHTML = "Chipset: H1 Ionic";
+		document.getElementById("p2d2").innerHTML = "-Active Noise Cancellation";
+		document.getElementById("p2d3").innerHTML = "-Up to 5 hour battery life";
+
+    }
+	else if(t.value == "Apple_Watch"){
+		document.getElementById("p2_Pic").src = "indexPictures/applewatch.jpg";
+		document.getElementById("p2_Title").innerHTML = "Apple Watch";
+		document.getElementById("p2_price").innerHTML = "$125.49";
+		document.getElementById("p2d1").innerHTML = "Processor: Apple S1P";
+		document.getElementById("p2d2").innerHTML = "Operating System: Watch OS 2.0";
+		document.getElementById("p2d3").innerHTML = "Storage: 4GB";
+
+	}
+}
+
+</script>
+
+
+<br><br><br>
+<br><br><br><br>
+<!-- ***************** Footer of the page *************** -->
+
+<footer style='text-align: center;'>
+  <p><a href="infoPages/faq.html">FAQ</a><span class="tab"><a href="infoPages/contact.html">Contact Us</a><span class="tab"><a href="infoPages/return.html">Return Policy</a></p>
+  </div>
+</footer>
+<span class="message">
+  <p style="text-align: center;">ElectronicsForCheap Ltd.</p>
+</span>
+
+</html>

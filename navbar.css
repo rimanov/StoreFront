@@ -1,0 +1,41 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.navbar{
+  width: 100%
+    overflow: hidden;
+    height: 70px;
+    line-height: 70px;
+    background: black;
+    border-bottom: 5px solid purple;
+}
+.logo{
+  width: 190px;
+    float: left;
+}
+.container{
+  width: 90%;
+    margin: 0 auto;
+}
+.menu{
+  float: right;
+}
+.menu li{
+  float: left;
+    width: 120px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    list-style: none;
+}
+.menu li a{
+  color: white;
+    text-decoration: none;
+    font-family: calibri;
+    text-transform: uppercase;
+    display: block;
+}
+.menu li:hover{
+  background: purple;
+}

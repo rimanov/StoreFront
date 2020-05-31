@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Macbook Pro</title>
+	<style>
+	<style>
+	body, html {
+	  height: 100%;
+	  margin: 0;
+	  font-family: Arial, Helvetica, sans-serif;
+	}
+
+* {
+	  box-sizing: border-box;
+	}
+/* this is for the spacing between the footer elements*/
+.tab {
+	   display:inline-block;
+	   margin-left: 280px;
+}
+
+/* this is for removing the line under links */
+a {
+		text-decoration: none;
+}
+
+/* these to input defs are for the submit button */
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 15px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: purple;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* this and the upcoming 'reel' tags are for the image reel created at the bottom of each product */
+.reel {
+	width: 2000px;
+	position: relative;
+	padding-top: 0px;
+	margin: 450px auto;
+}
+
+.reel > img {
+	position: absolute;
+	left: 100;
+	top: -400px;
+	transition: all 0.5s;
+}
+
+.reel input {
+	display: none;
+}
+
+.reel label {
+	width: 40px;
+	height: 40px;
+	margin: 20px 8px;
+	float: left;
+	border: 0px solid black;
+	cursor: pointer;
+	transition: all 0.5s;
+	opacity: 0.6;
+	box-sizing: border-box;
+}
+
+.reel label img {
+	width:1000 ;
+	height:300;
+}
+
+.reel input:checked + label {
+	border-color: white;
+	opacity: 1;
+}
+
+.reel input ~ img {
+	opacity: 0;
+	transform: scale(1.1);
+}
+
+.reel input:checked + label + img {
+	opacity: 1;
+	transform: scale(1.2);
+}
+</style>
+</style>
+<nav class="navbar">
+  <div class="container">
+    <div class="logo_div">
+      <a href= "/html/index.html"><img src="logo.jpeg" alt="" class="logo"></a>
+    </div>
+
+  <div class="navbar_links">
+    <ul class="menu">
+    <li><a href="/html/index.html">Home</a></li>
+    <li><a href="/html/allProductsPage.php">Products</a></li>
+    <li><a href="/html/infoPages/aboutPage.html">About</a></li>
+    <li><a href="/html/loginPages/loginPage.html">Login</a></li>
+    <li class="cart-icon">
+          <a href="/html/cartPage.php">
+          <i class="fa fa-shopping-cart" style="font-size:20px;color:white"></i><span></span>
+          </a>
+          </li>
+      </ul>
+  </div>
+</div>
+  </nav>
+</head>
+
+<body>
+<!--I divided the page in half so the product can be displayed on left and info on the right
+so in this first column, its the product pic and the reel of pics and on the second column it's product info and add to cart button-->
+	<div class="row">
+		<!-- This is where left column starts-->
+	  <div class="column" style="background-color:white;">
+			<h1>MacBook Air 13 Inch</h1>
+			<h2>$549.99<h2>
+				<div class="reel">
+<!--in this part, just change the product names at the end of the path-->
+				  <input type="radio" name="slide" id="image1" checked/>
+				  <label for="image1">
+						<img src="../products/productPictures/macbookAir13Inch.jpeg" style="width:100%">
+					</label>
+				  <img src="../products/productPictures/macbookAir13Inch.jpeg" style="width:20%">
+
+				  <input type="radio" name="slide" id="image2"/>
+				  <label for="image2">
+						<img src="../products/productPictures/macbookAir13Inch2.jpeg" style="width:100%">
+					</label>
+					<img src="../products/productPictures/macbookAir13Inch2.jpeg" style="width:20%">
+
+					<input type="radio" name="slide" id="image3"/>
+				  <label for="image3">
+						<img src="../products/productPictures/macbookAir13Inch3.jpeg" style="width:100%">
+					</label>
+					<img src="../products/productPictures/macbookAir13Inch3.jpeg" style="width:20%">
+				</div>
+				<br><br><br>
+	  </div>
+
+		<!-- This is where right column starts-->
+	  <div class="column" style="background-color:white;">
+			<h3><u>Manufactorer Description:</u></h3>
+
+		<!-- ***************** paragraph description (taken from amazon) ***************** -->
+			<p>The MacBook Air 8,2 (13-Inch, 2019) announcement marks the first update to this particular line of computers to have been made since the fall 2018 release of the more compact MacBook air with improved display functions, a more expansive trackpad and innovative features, such as Touch ID. </p>
+
+			<h3><u>Machine Specs:</u></h3>
+
+		<!-- ************** Start of the table *********** -->
+
+			<table style="width:100%">
+		  <tr>
+		    <td>Processor:</td>
+		    <td>1.6Ghz Intel Core i5</td>
+		  </tr>
+		  <tr>
+		    <td>Operating System:</td>
+		    <td>Mac OS Catalin</td>
+		  </tr>
+		  <tr>
+		    <td>Ram:</td>
+		    <td>8/16 GB</td>
+		  </tr>
+		  <tr>
+		    <td>Storage:</td>
+		    <td>128GB/256GB/512GB/1TB SSD</td>
+		</table>
+
+
+
+			<li>Two Thunderbolt 3 (USB-C) ports</li>
+			<li>Integrated Touch ID sensor</li>
+			<li>Apple T2 Security Chip</li>
+			<li>Up to 10 hours of battery life</li>
+			<li>Securely make online purchases with Apple Pay</li>
+			<li>Instantly authenticate password-protected documents</li>
+		</ul> <br>
+		<form>
+		<input type="submit" value="Add to Cart">
+		</form>
+	  </div>
+	</div>
+
+
+<!--FORMATTING ISSUE! Will fix this issue later but for now, it's functional -->
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<ul>
+	<table border="5" width="90%" bordercolor="black" align="center">
+	        <tr>
+	            <th colspan="3">Recommended Items!</th>
+	        </tr>
+	        <tr>
+	            <th>Item 1</th>
+	            <th>Item 2</th>
+	            <th>Item 3</th>
+	        </tr>
+
+	         <tr>
+	            <td align="center">
+	               <a href="samsung_Q70_65InchPage.html"> <img src="productPictures/samsung_Q70_65Inch.jpeg" alt="" border=3 height=100 width=160></img></a>
+	            <td align="center">
+	               <a href="airpodsProPage.html"><img src="productPictures/airpodsPro.jpeg" alt="" border=3 height=100 width=160></img></a>
+	            </td>
+	            <td align="center">
+	               <a href="macbookAir13InchPage.html"><img src="productPictures/macbookAir13Inch.jpeg" alt="" border=3 height=100 width=160></img></a>
+	            </td>
+	        </tr>
+	    </table>
+
+</body>
+<footer style='text-align: center;'>
+<p><a href= "../infoPages/faq.html">FAQ</a><span class="tab"><a href= "../infoPages/contact.html">Contact Us</a><span class="tab"><a href= "../infoPages/return.html">Return Policy</a></p></div>
+</footer>
+<span class="message">
+<p style="text-align: center;">ElectronicsForCheap Ltd.</p>
+</span>
+</html>

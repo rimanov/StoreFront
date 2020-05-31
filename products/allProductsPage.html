@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="../navbar.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>All Products</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Raleway;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100%;
+    }
+
+    .content-section {
+      margin: 2em;
+    }
+
+    .tab {
+      display: inline-block;
+      margin-left: 280px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .section-header {
+      font-family: "Metal Mania";
+      font-weight: normal;
+      color: #333;
+      text-align: center;
+      font-size: 50px;
+      max-width: 300px;
+      align-items: center;
+    }
+
+    .add-to-cart-btn {
+      background-color: black;
+      color: white;
+      padding: 10px 8px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .add-to-cart-btn:hover {
+      background-color: purple;
+    }
+
+    .shop-item {
+      margin: 20px;
+      width: 300px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      padding: 16px;
+      text-align: center;
+      background-color: white;
+    }
+
+    .shop-item-title {
+      display: block;
+      width: 100%;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.5em;
+      color: #333;
+      margin-bottom: 30px;
+      margin-left: 10px;
+    }
+
+    .shop-item-image {
+      height: 120px;
+    }
+
+    .shop-item-details {
+      display: flex;
+      align-items: center;
+      padding: 5px;
+    }
+
+    .shop-item-price {
+      flex-grow: 1;
+      color: #333;
+    }
+
+    .shop-items {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+    }
+  </style>
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo_div">
+        <a href= "/html/index.html"><img src="logo.jpeg" alt="" class="logo"></a>
+      </div>
+
+    <div class="navbar_links">
+      <ul class="menu">
+      <li><a href="/html/index.html">Home</a></li>
+      <li><a href="/html/allProductsPage.php">Products</a></li>
+      <li><a href="/html/infoPages/aboutPage.html">About</a></li>
+      <li><a href="/html/loginPages/loginPage.html">Login</a></li>
+      <li class="cart-icon">
+            <a href="/html/cartPage.php">
+            <i class="fa fa-shopping-cart" style="font-size:20px;color:white"></i><span></span>
+            </a>
+            </li>
+        </ul>
+    </div>
+  </div>
+  </nav>
+</head>
+
+<body>
+
+  <section class="container">
+    <h2 class="section-header">Laptops</h2>
+    <div class="shop-items">
+      <div class="shop-item">
+        <span class="shop-item-title">Acer Spin</span>
+        <a href="acerSpinPage.html">
+          <img class="shop-item-image" src="productPictures/acerSpin.jpeg">
+        </a>
+        <div class="shop-item-details">
+          <span class="shop-item-price">$69.99</span>
+          <button class="add-to-cart-btn" type="button">Add to Cart</button>
+        </div>
+      </div>
+      <div class="shop-item">
+        <span class="shop-item-title">Chromebook</span>
+        <a href="chromebookPage.html">
+          <img class="shop-item-image" src="productPictures/chromebook.jpeg">
+        </a>
+        <div class="shop-item-details">
+          <span class="shop-item-price">$49.98</span>
+          <button class="add-to-cart-btn" type="button">Add to Cart</button>
+        </div>
+      </div>
+      <div class="shop-item">
+        <span class="shop-item-title">Dell Insperion</span>
+        <a href="dell_InsperionPage.html">
+          <img class="shop-item-image" src="productPictures/dellInsperion.jpeg">
+        </a>
+        <div class="shop-item-details">
+          <span class="shop-item-price">$119.99</span>
+          <button class="add-to-cart-btn" type="button">Add to Cart</button>
+        </div>
+      </div>
+      <div class="shop-item">
+        <span class="shop-item-title">Macbook Air 13 Inch</span>
+        <a href="macbookAir13InchPage.html">
+          <img class="shop-item-image" src="productPictures/macbookAir13Inch.jpeg">
+        </a>
+        <div class="shop-item-details">
+          <span class="shop-item-price">$549.99</span>
+          <button class="add-to-cart-btn" type="button">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container">
+    <h2 class="section-header">Phones</h2>
+    <div class="shop-items">
+      <div class="shop-item">
+        <span class="shop-item-title">iPhone X</span>
+        <a href="iphoneXPage.html">
+          <img class="shop-item-image" src="productPictures/iphoneX.jpeg">
+        </a>
+        <div class="shop-item-details">
+          <span class="shop-item-price">$329.99</span>
+          <button class="add-to-cart-btn" type="button">Add to Cart</button>
+        </div>
+      </div>
+      <div class="shop-item">
+        <span class="shop-item-title">iPhone XR</span>
+        <a href="iphoneXRPage.html">
+          <img class="shop-item-image" src="productPictures/iphoneXR.jpeg">
+        </a>
+        <div class="shop-item-details">
+          <span class="shop-item-price">$<strike>599.98</strike><br>$229.99</span>
+          <button class="add-to-cart-btn" type="button">Add to Cart</button>
+        </div>
+      </div>
+      <div class="shop-item">
+        <span class="shop-item-title">Galaxy Note 10</span>
+        <a href="galaxyNote10.html">
+          <img class="shop-item-image" src="productPictures/galaxyNote10.jpeg">
+        </a>
+        <div class="shop-item-details">
+          <span class="shop-item-price">$439.99</span>
+          <button class="add-to-cart-btn" type="button">Add to Cart</button>
+        </div>
+      </div>
+      <div class="shop-item">
+        <span class="shop-item-title">Galaxy S20</span>
+        <a href="galaxyS20Page.html">
+          <img class="shop-item-image" src="productPictures/galaxyS20.jpeg">
+        </a>
+        <div class="shop-item-details">
+          <span class="shop-item-price">$519.99</span>
+          <button class="add-to-cart-btn" type="button">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container">
+    <h2 class="section-header">TVs</h2>
+    <div class="shop-items">
+      <div class="shop-item">
+        <span class="shop-item-title">Samsung Curved 55 Inch</span>
+        <a href="samsung_curved55InchPage.html">
+          <img class="shop-item-image" src="productPictures/samsung_curved55Inch.jpeg">
+        </a>
+        <div class="shop-item-details">
+          <span class="shop-item-price">$<strike>699.99</strike><br>$339.59</span>
+          <button class="add-to-cart-btn" type="button">Add to Cart</button>
+        </div>
+      </div>
+      <div class="shop-item">
+        <span class="shop-item-title">Samsung Q70 65 Inch</span>
+        <a href="samsung_Q70_65InchPage.html">
+          <img class="shop-item-image" src="productPictures/samsung_Q70_65Inch.jpeg">
+        </a>
+        <div class="shop-item-details">
+          <span class="shop-item-price">$<strike>1299.89</strike><br>$699.95</span>
+          <button class="add-to-cart-btn" type="button">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container">
+    <h2 class="section-header">Earphones</h2>
+    <div class="shop-items">
+      <div class="shop-item">
+        <span class="shop-item-title">Airpods Pro</span>
+        <a href="airpodsProPage.html">
+          <img class="shop-item-image" src="productPictures/airpodsPro.jpeg">
+        </a>
+        <div class="shop-item-details">
+          <span class="shop-item-price">$89.99</span>
+          <button class="add-to-cart-btn" type="button">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container">
+    <h2 class="section-header">Watches</h2>
+    <div class="shop-items">
+      <div class="shop-item">
+        <span class="shop-item-title">Apple Watch</span>
+        <a href="appleWatchPage.html">
+          <img class="shop-item-image" src="productPictures/appleWatch.jpeg">
+        </a>
+        <div class="shop-item-details">
+          <span class="shop-item-price">$125.49</span>
+          <button class="add-to-cart-btn" type="button">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="../addtoCart.js"></script>
+  <footer style='text-align: center;'>
+    <p><a href="../infoPages/faq.html">FAQ</a><span class="tab"><a href="../infoPages/contact.html">Contact Us</a><span class="tab"><a href="../infoPages/return.html">Return Policy</a></p>
+    </div>
+  </footer>
+  <span class="message">
+    <p style="text-align: center;">ElectronicsForCheap Ltd.</p>
+  </span>
+</body>
+
+</html>
